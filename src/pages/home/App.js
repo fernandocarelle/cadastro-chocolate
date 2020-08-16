@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import GlobalStyle from './styles/global';
-import { Container, ChocolateList } from './styles/style';
-import chocolateImg from './assets/images/chocolate.svg';
-import api from './services/api';
+import GlobalStyle from '../../styles/global';
+import { ChocolateList } from './style';
+import { Container } from '../../components/container';
+import chocolateImg from '../../assets/images/chocolate.svg';
+import api from '../../services/api';
 
 function App() {
+  const token = localStorage.getItem('@chocolate-front/token');
+
+  if (!token) {
+    window.location.href = '/login';
+  }
+
   const [infos, setInfos] = useState([]);
 
   useEffect(() => {
