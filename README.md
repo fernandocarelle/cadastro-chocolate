@@ -28,13 +28,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 REACT_APP_API=
 ```
 
+## Run static
 
-
-
-
-LOCAL -> http://localhost:3000
-
-EXCLUIR CHOCOLATE ->  HOMOLOG -> STAGING = https://api.staging.chocolatesgaroto.com -> .env
-
-EXCLUIR CHOCOLATE -> PROD -> https://api.chocolatesgaroto.com -> .
-
+```
+npm run static
+```
