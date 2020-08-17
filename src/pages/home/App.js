@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import GlobalStyle from '../../styles/global';
-import { ChocolateList } from './style';
+import { ChocolateList, ButtonLink } from './style';
 import { Container } from '../../components/container';
 import chocolateImg from '../../assets/images/chocolate.svg';
 import api from '../../services/api';
@@ -29,6 +30,13 @@ function App() {
         <Container>
           <img src={chocolateImg} alt="Logo barra de chocolate" />
           <h1>Chocolates</h1>
+          <ButtonLink type="button">
+            <Link to="/create">Cadastrar usuário</Link>
+          </ButtonLink>
+          <ButtonLink>
+            <Link to="/chocolate">Cadastrar chocolate</Link>
+          </ButtonLink>
+
           <ChocolateList>
             {infos.map((info) => (
               <li key={info._id}>

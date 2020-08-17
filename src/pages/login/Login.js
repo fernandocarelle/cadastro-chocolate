@@ -56,6 +56,7 @@ function Create() {
         <Container>
           <img src={chocolateImg} alt="Logo barra de chocolate" />
           <h1>Chocolates</h1>
+          <h2>Login</h2>
 
           <ChocolateForm onSubmit={onFormSubmit}>
             <input

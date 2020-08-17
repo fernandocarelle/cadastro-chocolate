@@ -60,6 +60,7 @@ function Chocolate() {
         <Container>
           <img src={chocolateImg} alt="Logo barra de chocolate" />
           <h1>Chocolates</h1>
+          <h2>Cadastrar chocolate</h2>
 
           <ChocolateForm onSubmit={onFormSubmit}>
             <input
